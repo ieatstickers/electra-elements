@@ -1,0 +1,28 @@
+{
+  "name": "electra/elements",
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "https://github.com/ieatstickers/electra-core.git"
+    },
+    {
+      "type": "vcs",
+      "url":  "https://github.com/ieatstickers/electra-utility.git"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "electra/core": "dev-master"
+  },
+  "authors": [
+    {
+      "name": "Mike Burke"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Electra\\Elements\\": "src"
+    }
+  }
+}
