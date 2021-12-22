@@ -13,7 +13,7 @@
   ],
   "require": {
     "ext-json": "*",
-    "electra/core": "dev-master"
+    "electra/core": "dev-php8.1-upgrade"
   },
   "authors": [
     {
