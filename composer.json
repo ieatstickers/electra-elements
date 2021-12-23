@@ -1,6 +1,7 @@
 {
   "name": "electra/elements",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "repositories": [
     {
       "type": "vcs",
@@ -13,7 +14,7 @@
   ],
   "require": {
     "ext-json": "*",
-    "electra/core": "dev-php8.1-upgrade"
+    "electra/core": "dev-master"
   },
   "authors": [
     {
