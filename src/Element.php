@@ -7,10 +7,10 @@ use Electra\Core\Exception\ElectraException;
 class Element
 {
   /**
-   * @return false|string
+   * @return string
    * @throws ElectraException
    */
-  public function render()
+  public function render(): string
   {
     $reflector = new \ReflectionClass(get_called_class());
     $templatePath = str_replace('.php', '.phtml', $reflector->getFileName());
@@ -32,5 +32,14 @@ class Element
     ob_end_clean();
 
     return $html;
+  }
+
+  /**
+   * @return string
+   * @throws ElectraException
+   */
+  public function __toString(): string
+  {
+    return $this->render();
   }
 }
