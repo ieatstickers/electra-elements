@@ -22,7 +22,7 @@ class Element
 
     ob_start();
     try {
-      require_once($templatePath);
+      include $templatePath;
       $html = ob_get_contents();
     }
     catch(\Exception $exception)
